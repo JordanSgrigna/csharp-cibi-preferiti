@@ -26,7 +26,7 @@ string elementiMedianaArray(string[] array)
 		string elementoArrayASinistra = array[array.Length / 2 - 1];
 		string elementoArrayADestra = array[array.Length / 2];
 
-		result = elementoArrayADestra + " " + elementoArrayASinistra;
+		result = elementoArrayASinistra + " " + elementoArrayADestra;
 
 	}
 	else
