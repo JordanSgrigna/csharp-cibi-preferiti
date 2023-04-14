@@ -8,9 +8,37 @@ for(int i = 0; i < userCibiPreferiti.Length; i++)
 	userCibiPreferiti[i] = userCibi;
 }
 
+arrayPrint(userCibiPreferiti);
+Console.WriteLine();
+elementiMedianaArray(userCibiPreferiti);
 
 
 
 //----------FUNZIONI----------------
+void elementiMedianaArray(string[] array)
+{
+	if (array.Length % 2 == 0)
+	{
+		string elementoArrayASinistra = array[array.Length / 2 - 1];
+		string elementoArrayADestra = array[array.Length / 2];
 
+		Console.WriteLine(elementoArrayADestra + elementoArrayASinistra)
+
+	}
+	else
+	{
+		string elementoArrayCentrale = array[array.Length / 2];
+
+		Console.WriteLine(elementoArrayCentrale);
+	}
+}
+
+
+string arrayPrint(string[] array)
+{
+	for (int i=0; i < array.Length; i++)
+	{
+		Console.WriteLine(array[i]);
+	}
+}
 
